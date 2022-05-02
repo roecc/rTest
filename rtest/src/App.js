@@ -1,13 +1,24 @@
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
-import { Icon } from "leaflet";
+import { Icon, L } from "leaflet";
 
 const DEFAULT_LANGITUDE = -123;
 const DEFAULT_LATITUDE = 48;
 
+//maybe move to separate script later
+const mIcon = new Icon ({
+  iconUrl: "https://vimune.com/assets/marker.svg",
+  iconSize: [25, 25]
+});
+
 function App() {
   return (
     <div id="site-container">
-      <div class="box-shadow">
+      <div className="logo-container">
+        <img class="logo" src="https://vimune.com/assets/name-white.svg" alt="">
+
+        </img>
+      </div>
+      <div className="box-shadow">
 
       </div>
       <MapContainer center={[52.52, 13.411]} zoom={12} scrollWheelZoom={true} zoomControl={false}>
@@ -16,7 +27,7 @@ function App() {
           url="https://stamen-tiles.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.png"
         />
 
-        <Marker position={[52.51, 13.411]}>
+        <Marker icon={mIcon} position={[52.51, 13.411]}>
           <Popup>
             A pretty CSS3 popup. <br /> Easily customizable.
           </Popup>
