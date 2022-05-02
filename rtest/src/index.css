@@ -10,4 +10,6 @@ body {
   filter: invert(.15);
   
   background-color: white;
+
+  box-shadow: inset 0 0 100px black;
 }
