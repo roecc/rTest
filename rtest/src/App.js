@@ -13,10 +13,10 @@ const mIcon = new Icon ({
 function App() {
   return (
     <div id="site-container">
-      <div className="logo-container">
+      <div className="logo-container header-blur">
         <img class="logo" src="https://vimune.com/assets/name-white.svg" alt="">
-
         </img>
+        <div class="sub-t arial">connecting the dots...</div>
       </div>
       <div className="box-shadow">
 
