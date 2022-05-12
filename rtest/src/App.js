@@ -1,5 +1,7 @@
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import { Icon, L } from "leaflet";
+import MarkerClusterGroup from 'react-leaflet-markercluster';
+
 
 const DEFAULT_LANGITUDE = -123;
 const DEFAULT_LATITUDE = 48;
@@ -14,6 +16,7 @@ function App() {
   return (
     <div id="site-container">
       <div className="logo-container header-blur">
+        
         <img class="logo" src="https://vimune.com/assets/name-white.svg" alt="">
         </img>
         <div class="sub-t arial">connecting the dots...</div>
